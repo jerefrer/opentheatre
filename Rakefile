@@ -4,3 +4,7 @@
 require File.expand_path('../config/application', __FILE__)
 
 Opentheatre::Application.load_tasks
+
+require 'coveralls/rake/task'
+Coveralls::RakeTask.new
+task :test_with_coveralls => [:spec, :features, 'coveralls:push']
