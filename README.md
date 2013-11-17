@@ -1,5 +1,7 @@
 # Open Theatre
 
+[![Stories in Ready](https://badge.waffle.io/jerefrer/opentheatre.png?label=ready)](http://waffle.io/jerefrer/opentheatre)
+
 ## User stories
 
 ```
