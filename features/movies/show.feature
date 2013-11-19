@@ -3,7 +3,7 @@ Feature: Show a movie's page
   As a user
   I want to be able to see a particular movie's full description
 
-  Scenario: Movie's description
+  Scenario: Show the movie's description
     Given there is a movie with the title "Matrix" and the overview "Awesome movie !"
     When I go to the page for the movie "Matrix"
     Then I should see "Matrix"

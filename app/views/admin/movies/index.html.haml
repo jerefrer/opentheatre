@@ -1,0 +1,7 @@
+- if @movies.any?
+  - @movies.each do |movie|
+    = movie.title
+- else
+  No movies yet.
+
+= link_to "Add a new movie", new_admin_movie_path
