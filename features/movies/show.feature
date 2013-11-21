@@ -5,6 +5,6 @@ Feature: Show a movie's page
 
   Scenario: Show the movie's description
     Given there is a movie with the title "Matrix" and the overview "Awesome movie !"
-    When I go to the page for the movie "Matrix"
+    And I am on the page for the movie "Matrix"
     Then I should see "Matrix"
     And  I should see "Awesome movie !"

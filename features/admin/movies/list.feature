@@ -4,12 +4,12 @@ Feature: List movies
   I want to be able to list the movies
 
   Scenario: Show a message when no movies exist
-    When I go to the admin movies page
+    Given I am on the admin movies page
     Then I should see a message saying there is no movies yet
 
   Scenario: List the movies
     Given there is a movie with the title "Matrix"
     And   there is a movie with the title "Dark City"
-    When I go to the admin movies page
+    And   I am on the admin movies page
     Then I should see "Matrix"
     And  I should see "Dark City"

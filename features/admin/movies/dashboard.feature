@@ -4,5 +4,5 @@ Feature: Admin Dashboard
   I want to be able to see the dashboard
 
   Scenario: Show a link to the movies
-    When I go to the admin dashboard page
-    Then I should see a link to the admin movies page
+    Given I am on the admin dashboard page
+    Then I should see a link "Movies" to the admin movies page

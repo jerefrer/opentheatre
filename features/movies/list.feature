@@ -4,12 +4,12 @@ Feature: List movies
   I want to be able to see a list of the movies
 
   Scenario: Show a message when no movies exist
-    When I go to the movies page
+    Given I am on the movies page
     Then I should see a message saying there is no movies yet
 
   Scenario: List the movies
     Given there is a movie with the title "Matrix"
     And   there is a movie with the title "Dark City"
-    When I go to the movies page
+    And   I am on the movies page
     Then I should see "Matrix"
     And  I should see "Dark City"

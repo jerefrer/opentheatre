@@ -6,4 +6,4 @@ Feature: Add movies
   Scenario: Go to the new page
     Given I am on the admin dashboard page
     And I click the "Movies" link
-    Then I should see "Add a new movie"
+    Then I should see a link "Add a new movie" to the admin new movie page
