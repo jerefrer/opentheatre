@@ -11,5 +11,5 @@ Feature: Add movies
   Scenario: Create a movie
     Given I am on the admin new movie page
     When I fill in the movie creation form
-    And I click the save button
+    And I click the "Create Movie" button
     Then I should see a message saying the movie has been created

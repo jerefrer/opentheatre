@@ -40,3 +40,5 @@ end
 gem 'twitter-bootstrap-rails'
 gem 'simple_form'
 gem 'friendly_id'
+gem 'carrierwave'
+gem 'mini_magick'

@@ -8,3 +8,4 @@ Feature: Show a movie's page
     And I am on the page for the movie "Matrix"
     Then I should see "Matrix"
     And  I should see "Awesome movie !"
+    And  I should see the poster for the movie "Matrix"

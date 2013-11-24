@@ -6,6 +6,7 @@
   = f.input :title
   = f.input :overview
   = f.input :slug
+  = f.input :poster, :as => :image_preview
   .form-actions
     = f.button :submit, :class => 'btn-primary'
     = link_to t('.cancel', :default => t("helpers.links.cancel")), movies_path, :class => 'btn'
