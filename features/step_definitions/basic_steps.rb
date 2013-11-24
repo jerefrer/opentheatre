@@ -13,3 +13,13 @@ end
 When /^(?:|I )click the "([^\"]*)" link$/ do |link_text|
   click_link(link_text)
 end
+
+When /^(?:|I )click the "([^\"]*)" link in the (.+)$/ do |link_text, bar|
+  container = case bar
+              when 'top menu' then '.navbar'
+              when 'sidebar'  then '.sidebar-nav'
+              end
+  within container do
+    click_link(link_text)
+  end
+end

@@ -3,10 +3,6 @@ Feature: List movies
   As an admin
   I want to be able to list the movies
 
-  Scenario: Show a message when no movies exist
-    Given I am on the admin movies page
-    Then I should see a message saying there is no movies yet
-
   Scenario: List the movies
     Given there is a movie with the title "Matrix"
     And   there is a movie with the title "Dark City"
