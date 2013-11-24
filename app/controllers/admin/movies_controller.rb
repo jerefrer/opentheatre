@@ -16,6 +16,16 @@ class Admin::MoviesController < ApplicationController
     redirect_to admin_movies_path, notice: "The movie has been created."
   end
 
+  def edit
+    @movie = Movie.find(params[:id])
+  end
+
+  def update
+    @movie = Movie.find(params[:id])
+    @movie.update_attributes(movie_params)
+    redirect_to admin_movies_path, notice: "The movie has been updated."
+  end
+
 private
 
   def movie_params
