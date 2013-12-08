@@ -13,3 +13,12 @@ Feature: Add movies
     When I fill in the movie creation form
     And I click the "Create Movie" button
     Then I should see a message saying the movie has been created
+
+  Scenario: Search a movie with TMDB
+    Given I am on the admin new movie page
+    When I submit the movie search form with "Starship Troopers"
+    Then I should see those movies and their posters:
+      | Starship Troopers                           |
+      | Starship Troopers: Invasion                 |
+      | Starship Troopers 3: Marauder               |
+      | Starship Troopers 2: Hero of the Federation |

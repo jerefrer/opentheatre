@@ -2,6 +2,11 @@
 .page-header
   %h1= t '.title', :default => [:'helpers.titles.new', 'New %{model}'], :model => model_class.model_name.human.titleize
 
+= form_tag search_admin_movies_path, :method => :post, :class => 'search form-search' do
+  .input-append
+    = text_field_tag :q, params[:q], :class => 'search-query'
+    = submit_tag 'Search', :class => 'btn'
+
 = simple_form_for [:admin, @movie], :html => { :class => 'form-horizontal' } do |f|
   = f.input :title
   = f.input :overview

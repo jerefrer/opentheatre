@@ -3,6 +3,10 @@ class Admin::MoviesController < ApplicationController
     @movies = Movie.all
   end
 
+  def search
+    @movies = Tmdb::Movie.find(params[:q])
+  end
+
   def show
     @movie = Movie.find(params[:id])
   end

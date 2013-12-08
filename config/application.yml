@@ -1,0 +1,13 @@
+# config/application.yml
+defaults: &defaults
+  tmdb_api:
+    key: 23878082b4db76d4e62b6247b4758bdc
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

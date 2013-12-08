@@ -41,3 +41,16 @@ end
 Then /^I should see the poster for the movie "(.*?)"$/ do |title|
   page.should have_selector(".poster img")
 end
+
+When(/^I submit the movie search form with "(.*?)"$/) do |text|
+  within '.search' do
+    fill_in 'q', with: text
+    click_button 'Search'
+  end
+end
+
+Then(/^I should see those movies and their posters:$/) do |table|
+  table.rows.flatten.each do |title|
+    find('tr', text: title).should have_selector('img')
+  end
+end

@@ -1,0 +1,10 @@
+%table.search_results
+  %tr
+    %th
+    %th Poster
+    %th Title
+  - @movies.each do |movie|
+    %tr
+      %td
+      %td= image_tag poster_path(movie)
+      %td= movie.title
