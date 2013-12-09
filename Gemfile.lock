@@ -291,6 +291,7 @@ DEPENDENCIES
   factory_girl_rails
   friendly_id
   haml-rails
+  httparty
   jazz_hands
   jbuilder (~> 1.2)
   jquery-rails
