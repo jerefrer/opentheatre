@@ -1,9 +1,9 @@
 GIT
   remote: git://github.com/ahmetabdi/themoviedb.git
-  revision: a88d6b607c5e3ee62733710de01d199b1c24993e
+  revision: c747a65e3314e78b37603fc323de58162dd1cae7
   specs:
-    themoviedb (0.0.12)
-      httparty
+    themoviedb (0.0.16)
+      httparty (~> 0)
 
 GEM
   remote: https://rubygems.org/
@@ -291,7 +291,6 @@ DEPENDENCIES
   factory_girl_rails
   friendly_id
   haml-rails
-  httparty
   jazz_hands
   jbuilder (~> 1.2)
   jquery-rails

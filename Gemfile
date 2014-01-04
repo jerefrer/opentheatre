@@ -43,6 +43,5 @@ gem 'friendly_id'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'settingslogic'
-gem 'httparty' # Needed for themoviedb (Why ? Ask Travis)
 gem 'themoviedb', :git => 'git://github.com/ahmetabdi/themoviedb.git'
 gem 'select2-rails'
