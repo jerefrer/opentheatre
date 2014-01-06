@@ -4,6 +4,7 @@
 [![Build Status](https://secure.travis-ci.org/jerefrer/opentheatre.png)](http://travis-ci.org/jerefrer/opentheatre)
 [![Code Climate](https://codeclimate.com/repos/5288aa1256b102456604ffea/badges/9504bd7edb012d484bec/gpa.png)](https://codeclimate.com/repos/5288aa1256b102456604ffea/feed)
 [![Coverage Status](https://coveralls.io/repos/jerefrer/opentheatre/badge.png)](https://coveralls.io/r/jerefrer/opentheatre)
+[![Dependency Status](https://gemnasium.com/jerefrer/opentheatre.png)](https://gemnasium.com/jerefrer/opentheatre)
 ## User stories
 
 ```
